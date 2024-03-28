@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  /* background-color: #000; */
+  font-family: "Intervogue Black", "Josefin Sans", "sans-serif", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main_nav {
+  display: flex;
+  background-color: black;
+  height: 10.5vh;
+  width: 100vw;
+  align-items: center;
+  border: 15px solid black;
+  justify-content: space-evenly;
+  position: fixed;
+  padding: 0 20px;
+  overflow: hidden;
+  top: 0;
+  z-index: 9;
+}
+.compony {
+  font-size: 25px;
+  /* margin: 0vw 7vw 0vw 4.8vw; */
+  padding: 0px 45px 0px 13px;
+}
+.nav_tags {
+  display: flex;
+  padding-left: 50px;
+}
+.nav {
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  font-weight: 900;
+  transition: 0.2s;
+}
+.nav_icon {
+  display: flex;
+  margin-left: 5px;
+  padding: 0px 20px 0px 20px;
+}
+.nav_i img {
+  height: 23px;
+  padding: 0px 6px 0px 6px;
+}
+.nav_tags .nav:hover,
+.nav_icon .nav-i:hover {
+  color: #56a1d7;
+  transition: 0.2s;
+}
+.btn_nav {
+  margin-left: 15px;
+  padding: 14px 44px 11px 44px;
+  background-color: black;
+  border: 2px solid #5758e0;
+  font-size: 15px;
+  font-weight: 800;
+}
+.btn_nav a {
+  text-decoration: none;
+}
+.bg_sh {
+  height: 75vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.853);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  flex-direction: column;
+  text-align: center;
+}
+.page1 {
+  margin-top: 9vh;
+  width: 100vw;
+}
+.page1 img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.bg_sh h1 {
+  width: 65%;
+  line-height: 103px;
+  font-family: Arial;
+  font-size: 88px;
+  font-weight: 900;
+  background: linear-gradient(to right, #575bdf, #56a1d7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.bg_sh p {
+  padding-top: 35px;
+  width: 65%;
+  font-size: 25px;
+  color: #999999;
+  line-height: 38px;
+}
+.btn {
+  margin-top: 30px;
+  padding: 14px 44px 11px 44px;
+  background-color: #5758e0;
+  font-size: 15px;
+  font-weight: 800;
+}
+.btn a {
+  text-decoration: none;
+}
+.btn:hover,
+.btn_nav:hover {
+  transform: scale(1.0099);
+  background: linear-gradient(to right, #575bdf, #56a1d7);
+  border-style: hidden;
+}
+.page2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  padding-top: 45px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.line1,
+.line2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.line1 .card,
+.line2 .card {
+  height: 275px;
+  width: 23%;
+  padding: 60px 0px;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.line1 .card:hover,
+.line2 .card:hover,
+.line1 .card:hover p,
+.line2 .card:hover p {
+  background: linear-gradient(to right, #575bdf, #56a1d7);
+  color: white;
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.line1 .card h3,
+.line2 .card h3 {
+  font-size: 29px;
+  margin-bottom: 5%;
+}
+.line1 .card p,
+.line2 .card p {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  color: #999999;
+}
+.page3 {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+}
+.page3 img {
+  height: 62%;
+  margin-left: 12%;
+}
+.page3 .about {
+  font-family: "Arial Narrow", "Arial", "sans-serif";
+  width: 34%;
+  margin-left: 4%;
+}
+.page3 .about .line {
+  height: 5px;
+  width: 60px;
+  background: linear-gradient(to right, #575bdf, #56a1d7);
+}
+.page3 h1 {
+  font-size: 45px;
+  padding-top: 7%;
+}
+.page3 p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: "Arial Narrow", "Arial", "sans-serif";
+  color: #999999;
+  word-spacing: 5px;
+  margin-bottom: 10%;
+}
+.page4 {
+  width: 100vw;
+  height: 110vh;
+  background-color: #111;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.page4 img {
+  height: 65%;
+  margin-left: 3%;
+}
+.page4 .left_div {
+  margin-left: 10%;
+  width: 37%;
+}
+.page4 .left_div h1 {
+  font-size: 45px;
+  padding-top: 30px;
+}
+.page4 .left_div p {
+  padding: 25px 5px 10px 5px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #999999;
+}
+.page4 .left_div h2 {
+  font-size: 27px;
+  /* margin-left: 10%; */
+  padding-top: 20px;
+}
+.page4 .left_div .p1 .line {
+  height: 5px;
+  width: 60px;
+  background: linear-gradient(to right, #575bdf, #56a1d7);
+}
+.page4 .left_div .p2 {
+  margin-left: 10%;
+}
+.footer {
+  height: 55vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: #111111;
+}
+.footer .allCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .allCards .cardc {
+  height: 275px;
+  width: 23%;
+  padding: 60px 0px;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.footer .allCards .cardc p {
+  padding-top: 10px;
+}
+.footer .allCards .cardc:hover {
+  background: linear-gradient(to right, #575bdf, #56a1d7);
+  color: white;
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.lastline {
+  height: 80px;
+  width: 100vw;
+  background-color: #000;
+  color: #999999c0;
+  /* position: relative; */
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lastline p {
+  padding: 0px 25px;
+}
+.lastline p a {
+  color: #5758e0;
+  text-decoration: none;
+}
+
+/* @media (max-width: 600px) {
+  .nav_tags {
+    display: none;
+  }
+  .nav_icon {
+    display: none;
+  }
+  .btn_nav {
+    display: none;
+  }
+  .page1 img {
+    display: auto;
+  }
+  .page1 .bg_sh h1 {
+    font-size: 9vw;
+    line-height: 100%;
+  }
+  .page1 .bg_sh p {
+    font-size: 3.5vw;
+  }
+  .page2 {
+    height: 60vh;
+  }
+  .page2 .line1 .card,
+  .page2 .line2 .card {
+    height: 25%;
+  }
+  .page2 .line1 .card p,
+  .page2 .line2 .card p {
+    display: none;
+  }
+  .page2 .line1 .card h3,
+  .page2 .line2 .card h3 {
+    font-size: 4vw;
+    padding: 0 6vw;
+  }
+  .line1 .card:hover,
+  .line2 .card:hover,
+  .line1 .card:hover p,
+  .line2 .card:hover p {
+    display: inherit;
+  }
+
+  .line1 .card:hover h3,
+  .line2 .card:hover h3 {
+    display: none;
+  }
+} */
